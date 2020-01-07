@@ -32,8 +32,12 @@ if($text=="forum"){
     $parameters = array('chat_id' => $chatId, "text" => "J8GXGHVGJTPF");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
-}else if($text=="forum"){
-    $parameters = array('chat_id' => $chatId, "text" => "Enciclica_Socialista");
+}else if($text=="bot"){
+    $parameters = array('chat_id' => $chatId, "text" => "3nciclica_S0cialista");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else if($text=="github"){
+    $parameters = array('chat_id' => $chatId, "text" => "4rtista_Pr3ferito Minimal");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else{
