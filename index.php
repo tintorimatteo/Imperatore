@@ -15,7 +15,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
-if(stripos("/",$text)==0){ //è un comando
+if(stripos("/",$text)==0){ //se è un comando
     $toSend= explode(" ",$text);
     for($i=1;$i<count($toSend);$i++)
         echo $toSend[i];
@@ -27,8 +27,23 @@ $text = strtolower($text);
 
 
 header("Content-Type: application/json");
+//$parameters["method"] = "getMe"; //PER INFO BOT
+if($text=="forum"){
+    $parameters = array('chat_id' => $chatId, "text" => "J8GXGHVGJTPF");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else if($text=="bot"){
+    $parameters = array('chat_id' => $chatId, "text" => "3nciclica_S0cialista");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else if($text=="github"){
+    $parameters = array('chat_id' => $chatId, "text" => "4rtista_Pr3ferito Minimal");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else{
 $parameters = array('chat_id' => $chatId, "text" => $text);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
+}
 
 ?>
