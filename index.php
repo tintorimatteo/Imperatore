@@ -40,6 +40,14 @@ if($text=="forum"){
     $parameters = array('chat_id' => $chatId, "text" => "4rtista_Pr3ferito Minimal");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
+}else if($text=="jobmail"){
+    $parameters = array('chat_id' => $chatId, "text" => "HaoshokuYYYY");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else if($text=="quid"){
+    $parameters = array('chat_id' => $chatId, "text" => "...D.447");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
 }else{
 $parameters = array('chat_id' => $chatId, "text" => $text);
 $parameters["method"] = "sendMessage";
