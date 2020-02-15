@@ -32,7 +32,7 @@ if($text=="forum"){
     $parameters = array('chat_id' => $chatId, "text" => "J8GXGHVGJTPF");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
-}else if($text=="paasbot"){
+}else if($text=="bot"){
     $parameters = array('chat_id' => $chatId, "text" => "3nciclica_S0cialista");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
@@ -50,6 +50,10 @@ if($text=="forum"){
     echo json_encode($parameters);
 }else if($text=="unifi"){
     $parameters = array('chat_id' => $chatId, "text" => "Who.M.I(Karashò)?");
+    $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
+}else if($text=="biblioteca"){
+    $parameters = array('chat_id' => $chatId, "text" => "cod.fs., 087v9xgm");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else{
