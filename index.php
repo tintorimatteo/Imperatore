@@ -89,7 +89,7 @@ if($text=="forum"){
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);*/
-      $content = "Amore,Roma,Minaccia,Lui";
+      $content = "Amore,Roma,Minaccia,Lui\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
