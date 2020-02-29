@@ -57,12 +57,12 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="metaphore"){
-    $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Gang-Klan-Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,"+
+   /* $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Gang-Klan-Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,"+
         "Archimede-Marco-Odino-Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
-    /* $content = "Mondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà\n";
+     $content = "Mondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
@@ -88,11 +88,11 @@ if($text=="forum"){
           +"\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
-    echo json_encode($parameters);
-      $content = "Amore,Roma,Minaccia,Lui\n";
+    echo json_encode($parameters);*/
+      $content = "Amore,Roma,Minaccia,Lui";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
-    echo json_encode($parameters);*/
+    echo json_encode($parameters);
 }else{
 $parameters = array('chat_id' => $chatId, "text" => $text);
 $parameters["method"] = "sendMessage";
