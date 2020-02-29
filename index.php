@@ -57,9 +57,7 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="metaphore"){
-      $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Gang-Klan-Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,"+
-        "Archimede-Marco-Odino-Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Resto(?),Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu,Pace(?).\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola,Cuore(?),Sogno,BucoNero,Florenza"+
-          "Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Energia(?),Spia,Faccia.\nAmore,Roma,Minaccia,Lui\n";
+      $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Gang-Klan-Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Archimede-Marco-Odino-Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Resto(?),Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu,Pace(?).\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola,Cuore(?),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Energia(?),Spia,Faccia.\nAmore,Roma,Minaccia,Lui\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
