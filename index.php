@@ -62,7 +62,7 @@ if($text=="forum"){
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
-     $content = "Mondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà\n";
+    /* $content = "Mondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
@@ -92,7 +92,7 @@ if($text=="forum"){
       $content = "Amore,Roma,Minaccia,Lui\n";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
-    echo json_encode($parameters);
+    echo json_encode($parameters);*/
 }else{
 $parameters = array('chat_id' => $chatId, "text" => $text);
 $parameters["method"] = "sendMessage";
