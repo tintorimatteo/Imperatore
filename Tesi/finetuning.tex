@@ -1,0 +1,14 @@
+\chapter{Sistema di segmentazione oggetti}
+\label{chap:preparation}
+In questo capitolo, per iniziare, si vuole distinguere la differenza tra un training di una rete blackbox e un fine tuning di una rete preaddestrata.\\
+Essendo \textbf{Mask-RCNN} una rete preaddestrata per circa 60 classi, si parlerà innanzitutto di un fine tuning e non di un allenamento di una rete partendo da zero esperienza(blackbox).\\
+La cosa che distingue il nostro agire in questo caso è che faremo un fine tuning, non sulle circa 60 classi sulla quale è stata preaddestrata la rete, ma solamente su 2 classi che rappresenteranno i giocatori e la palla all'interno del campo di calcio.
+\newpage
+\section{Strutturazione Fine-Tuning}
+Come premessa, bisogna dichiarare il fatto che per un buon fine tuning serve scegliere un software di labeling che fornisce le annotazioni in un certo formato, solitamente XML.
+Nel nostro caso, siccome sappiamo che PASCALVOC XML viene usato quando c'è da fare object detection mentre noi cerchiamo di fare instance segmentation, abbiamo usato un software chiamato \textbf{labelme} che produce annotazioni con estensione JSON in modo da prelevare facilmente i dati dei poligoni racchiusi nei files.
+Lo strumento \textbf{labelme} viene utilizzato per tracciare poligoni intorno ai giocatori nei frames, cioè le immagini singole di un video che è stato frammentato con uno strumento come ad esempio \textbf{Avidemux}. \\
+Nel software \textbf{labelme} quando viene scelto un tracciamento della curva \emph{poligono}, questi poligoni devono essere tracciati come linea spezzata chiusa con un numero di punti adatto a circondare con la minima tolleranza possibile la forma di un giocatore, e nel caso della scelta sul software \textbf{labelme} della curva \emph{cerchio}, esso andrà a circondare la palla.
+Chiaramente, un giocatore potrà essere all'interno del campo in diverse posizioni, ad esempio in piedi fermo, in piedi in corsa oppure a terra come dopo una parata o una scivolata; tutti questi casi devono essere circondati da punti che formano un poligono per far sì che la rete \textbf{MaskRCNN} abbia un allenamento soddisfacente.\\
+Una volta salvato il frame modificato con i poligoni, il software \textbf{labelme} genererà un file JSON con all'interno i dati del nome dell'immagine, la sua altezza e larghezza, il numero e i punti dei poligoni in modo da essere letti successivamente da codice.
+L'operazione di contornamento dei giocatori e della palla con i poligoni di punti, si chiama \textbf{labeling}, e si può effettuare un labeling anche massivo specificando all'apertura del software \textbf{labelme}  una directory dove sono presenti tutti i frames del video obbiettivo e in contempo una directory vuota dove produrre in massa i file JSON delle loro annotazioni; ogni file di annotazione viene prodotto non appena il labeling di un immagine viene ultimato e quindi l'immagine viene salvata.

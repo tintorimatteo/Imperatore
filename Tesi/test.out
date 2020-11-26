@@ -1,0 +1,19 @@
+\BOOKMARK [0][]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [1][]{section.1.1}{Intento}{chapter.1}% 2
+\BOOKMARK [1][]{section.1.2}{Ambito del progetto}{chapter.1}% 3
+\BOOKMARK [0][]{chapter.2}{Strumentazione}{}% 4
+\BOOKMARK [1][]{section.2.1}{Piattaforma di sviluppo}{chapter.2}% 5
+\BOOKMARK [1][]{section.2.2}{Miniconda}{chapter.2}% 6
+\BOOKMARK [1][]{section.2.3}{CODEC di partenza}{chapter.2}% 7
+\BOOKMARK [1][]{section.2.4}{FFMPEG}{chapter.2}% 8
+\BOOKMARK [1][]{section.2.5}{Mask-RCNN}{chapter.2}% 9
+\BOOKMARK [0][]{chapter.3}{Analisi}{}% 10
+\BOOKMARK [1][]{section.3.1}{Analisi Funzionale}{chapter.3}% 11
+\BOOKMARK [1][]{section.3.2}{Analisi Tecnica}{chapter.3}% 12
+\BOOKMARK [0][]{chapter.4}{Preparazione}{}% 13
+\BOOKMARK [1][]{section.4.1}{Strutturazione Fine-Tuning}{chapter.4}% 14
+\BOOKMARK [0][]{chapter.5}{Discussione}{}% 15
+\BOOKMARK [1][]{section.5.1}{Commenti al Codice}{chapter.5}% 16
+\BOOKMARK [0][]{chapter.6}{Debug}{}% 17
+\BOOKMARK [1][]{section.6.1}{hevc\137nvenc}{chapter.6}% 18
+\BOOKMARK [0][]{section.6.1}{Bibliography}{}% 19

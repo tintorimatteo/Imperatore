@@ -1,0 +1,419 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{HEVC}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CF}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Fangdong},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Houqiang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Dong},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFLHLLLDWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{{Block-Composed Background Reference for High Efficiency
+  Video Coding}}
+    \field{journaltitle}{IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO
+  TECHNOLOGY}
+    \field{year}{2017}
+  \endentry
+
+  \entry{fine_tuning_book}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={François},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning Publications}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{{Deep Learning with Python: Chapter 5.3.2: Fine-tuning}}
+    \verb{url}
+    \verb https://livebook.manning.com/book/deep-learning-with-python/chapter-5
+    \verb /216l
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{Videocompression_basics}{book}{}
+    \name{author}{3}{}{%
+      {{hash=HL}{%
+         family={Hanzo},
+         familyi={H\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CPJ}{%
+         family={Cherriman},
+         familyi={C\bibinitperiod},
+         given={P.\bibnamedelima J.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Streit},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley\&Sons}%
+    }
+    \strng{namehash}{HLCPJSJ1}
+    \strng{fullhash}{HLCPJSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{subtitle}{From Basics to H.261, H.263, H.264, MPEG4 for DVB and
+  HSDPA-Style Adaptive Turbo-Transceivers}
+    \field{title}{{Video Compression and Communications }}
+    \field{year}{2007}
+  \endentry
+
+  \entry{ROI_Coding}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LX}{%
+         family={Lan},
+         familyi={L\bibinitperiod},
+         given={Xuguan},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZN}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Nanning},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wen},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LX+1}
+    \strng{fullhash}{LXZNMWYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{{Arbitrary ROI-based wavelet video coding }}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Finetuning_pretrained}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xiaoqi},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chengliang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Jianying},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Liao},
+         familyi={L\bibinitperiod},
+         given={Guobin},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LX+2}
+    \strng{fullhash}{LXWCBJLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{{Fine-Tuning Pre-trained Convolutional Neural Network for
+  Gastric Precancerous Disease Classification on Magnification Narrow-band
+  Imaging Images}}
+    \verb{url}
+    \verb https://www.journals.elsevier.com/neurocomputing
+    \endverb
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Comparison_codingstandards}{article}{}
+    \name{author}{5}{}{%
+      {{hash=OJR}{%
+         family={Ohm},
+         familyi={O\bibinitperiod},
+         given={Jens-Rainer},
+         giveni={J\bibinithyphendelim R\bibinitperiod},
+      }}%
+      {{hash=SGJ}{%
+         family={Sullivan},
+         familyi={S\bibinitperiod},
+         given={Gary\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schwarz},
+         familyi={S\bibinitperiod},
+         given={Heiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TTK}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Thiow\bibnamedelima Keng},
+         giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wiegand},
+         familyi={W\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJR+1}
+    \strng{fullhash}{OJRSGJSHTTKWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{{Comparison of the Coding Efficiency of Video Coding
+  Standards—Including High Efficiency Video Coding (HEVC) }}
+    \field{journaltitle}{IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO
+  TECHNOLOGY}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Training}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PDR}{%
+         family={Plata},
+         familyi={P\bibinitperiod},
+         given={Diego\bibnamedelima Rueda},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RPR}{%
+         family={Ramos-Pollan},
+         familyi={R\bibinithyphendelim P\bibinitperiod},
+         given={Raul},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GFA}{%
+         family={Gonzalez},
+         familyi={G\bibinitperiod},
+         given={Fabio\bibnamedelima A.},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PDRRPRGFA1}
+    \strng{fullhash}{PDRRPRGFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{{Effective training of convolutional neural networks with
+  small, specialized dataset}}
+    \field{journaltitle}{Journal of Intelligent \& Fuzzy Systems 32}
+    \field{year}{2017}
+  \endentry
+
+  \entry{H264_MPEG4}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RIE}{%
+         family={Richardson},
+         familyi={R\bibinitperiod},
+         given={Iain\bibnamedelima E.G.},
+         giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {WILEY}%
+    }
+    \strng{namehash}{RIE1}
+    \strng{fullhash}{RIE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{H.264 and MPEG-4}}
+    \field{year}{2003}
+  \endentry
+
+  \entry{CRF_vs_QP}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RW}{%
+         family={Robitza},
+         familyi={R\bibinitperiod},
+         given={Werner},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RW1}
+    \strng{fullhash}{RW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{CRF Guide (Constant Rate Factor in x264, x265 and libvpx)}}
+    \verb{url}
+    \verb https://slhck.info/video/2017/02/24/crf-guide.html
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{HEVC_Extension}{article}{}
+    \name{author}{4}{}{%
+      {{hash=THR}{%
+         family={Tohidypour},
+         familyi={T\bibinitperiod},
+         given={Hamid\bibnamedelima Reza},
+         giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bashashati},
+         familyi={B\bibinitperiod},
+         given={Hossein},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PMT}{%
+         family={Pourazad},
+         familyi={P\bibinitperiod},
+         given={Mahsa\bibnamedelima T.},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nasiopoulos},
+         familyi={N\bibinitperiod},
+         given={Panos},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{THR+1}
+    \strng{fullhash}{THRBHPMTNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{{Online-Learning-Based Mode Prediction Method for Quality
+  Scalable Extension of the High Efficiency Video Coding (HEVC) Standard}}
+    \field{journaltitle}{IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO
+  TECHNOLOGY}
+    \field{year}{2017}
+  \endentry
+
+  \entry{libvpx}{article}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{{libvpx}}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Libvpx
+    \endverb
+  \endentry
+
+  \entry{Semisupervised_learning}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ZX}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Xiaojin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=GAB}{%
+         family={Goldberg},
+         familyi={G\bibinitperiod},
+         given={Andrew\bibnamedelima B.},
+         giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Morgan\&Claipool}%
+    }
+    \strng{namehash}{ZXGAB1}
+    \strng{fullhash}{ZXGAB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{{Introduction to Semi-Supervised Learning}}
+    \field{year}{2009}
+  \endentry
+\enddatalist
+\endinput

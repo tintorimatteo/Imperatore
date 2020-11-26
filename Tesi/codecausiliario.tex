@@ -1,0 +1,12 @@
+\chapter{Alternativa}
+\label{chap:alternative}
+In questo capitolo il nostro scopo è differente da quello di proporre un codec efficiente, ma di utilizzare invece un codec alternativo non orientato alle partite di calcio ma general purpose che rende alta la definizioni dell'insieme dei punti dove il visualizzatore del video è abituato a guardare, ovvero nel suo punto centrale.
+Il codice per utilizzare questo codec, meno efficiente del nostro poiché usa un'implementazione di x264, si può utilizzare da barra di comando  
+/path/to/executable/x264 source.mp4
+e con una lista di parametri che viene dettagliata in seguito:
+\begin{itemize}
+\item --output <out>.mp4
+\item --bitrate <bitrate\_totale> 
+\item--saliency <nome\_file>  
+\item --saliency-bitrate <bitrate\_percentuale\_interessante>
+\end{itemize}

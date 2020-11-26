@@ -1,0 +1,19 @@
+\chapter{Introduzione}
+\label{chap:intro}
+%Introduzione su cosa ho fatto
+
+\section{Intento}
+\label{sec:intento}
+%Identifica il prodotto, includendo versione di revisione e/o rilascio. 
+
+L'obbiettivo di questo elaborato è la realizzazione di un Codec a partire da formato \textbf{H.265} destinato a video di calcio HD, che performi una compressione altrettanto efficiente ma variabile sulla base del contenuto interessante di ogni singolo frame.
+In particolare, si vuole codificare una partita di calcio utilizzando reti neurali convoluzionali per il riconoscimento e la conseguente segmentazione dei giocatori sul campo, e quando possibile, della palla. 
+Le posizioni delle suddette entità sono le regioni di interesse che saranno lasciate senza perdita di qualità, mentre sulle altre zone verrà applicato un filtro che fornirà una compressione migliore "sacrificando" le alte frequenze e quindi una piccola parte di informazione non interessante. Viene poi effettuato un confronto tra il video originale e quello codificato come indice di efficienza, utilizzando metriche di qualità oggettiva. Infine, come indice di miglior codifica, viene effettuato un confronto tra i risultati di questo prodotto e un altro prodotto basato su Codec x264 e salienza, intesa come punto centrale dove l'osservatore è abituato a guardare spontaneamente, e se ne deduce il migliore in termini di dimensioni del prodotto compresso risultante.
+
+
+\section{Ambito del progetto}
+\label{sec:projscope}
+%Breve descrizioni del software , includendo benefici, obiettivi e goals.
+Il software si colloca nel campo della computer vision e si vuole affermare come Codec \textbf{H.265} che punta a comprimere più informazioni delle librerie già usate, valido particolarmente nei casi in cui ci sia una limitazione di spazio nel device in cui si scarica/guarda il video o nel caso si debba risparmiare per motivi economici sulla quantità di dati scaricati (ad esempio una soglia di (G)byte massima fissata dal gestore telefonico). 
+Il Codec non si propone come versione superiore delle implementazioni già esistenti di \textbf{H.265} ma piuttosto come alternativa semantica.
+\\

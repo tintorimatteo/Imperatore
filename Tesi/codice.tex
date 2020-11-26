@@ -1,0 +1,18 @@
+\chapter{Discussione}
+\label{chap:discussion}
+
+\section{Commenti al Codice}
+\label{sec:comments}
+\begin{enumerate}
+\item Partendo dal principio, analizziamo la riga \emph{get\_ipython} e \emph{ipy.run\_line\_magic("matplotlib,"inline")}: queste righe partono dalla necessità di fare solo un piccolo debug non necessario al reale algoritmo, ma necessario quando l'input è ancora un'immagine singola per mostrare all'utente come visto in \ref{sec:func} le operazioni di instance segmentation su un'immagine. Senza queste righe non ci sarebbe il grafico a provare questo tipo di lavoro e quindi non si sarebbe sviluppato con certezza la parte dell'algoritmo che serve realmente e cioè quella dove l'input è un video.\\
+\item L'istruzione \emph{parse.parseargs()} serve chiaramente ad ottenere i parametri di ingresso che sono stati specificati dall'utente per poi controllare se c'è in input un video/immagine oppure c'è una richiesta di fine tuning.
+\item Dopo il controllo che sia effettivamente una richiesta di fine tuning, ci sono le istruzioni già descritte: \emph{f\_tune = FineTuning() e f\_tune.start()} per iniziare il training della rete.
+\item Dopo il controllo che invece sia un video/immagine, viene creata una variabile \emph{config=CleverConfig()} che viene utilizzata per creare il model e dopo vengono caricati i pesi. Infine, vengono creati un array con la lista delle classi e i colori:
+\emph{classes = ["BG","player","ball"] e COLORS = ["green","red","blue"]}
+\item Dopo ciò, viene salvata una path che indirizza verso la cartella del dataset DATASET\_PATH e si controlla con \emph{os.path.exists(DATASET\_PATH+args.input)} se questo file specificato in args.input esiste in quella path, in caso contrario il programma termina.
+\item In caso positivo, si legge il file video con l'istruzione \emph{vread} e se ne leggono i metadati interessanti quali \textbf{fps,height,width} per poi creare un nome che è quello del video originale concatenato al timestamp come nome del video codificato.
+\item Si crea quindi un oggetto \textbf{FFMpegWriter} e si munisce dei parametri ottenuti con i metadati uniti al codec scelto \textbf{hecv\_nvenc}, e al parametro di qualità costante con la qualità scelta. Da notare che come enunciato in \textsuperscript{\textbf{\ref{chap:debug}}} il flag verbosity è attivo.
+\item In seguito, si entra nel ciclo madre di tutto l'algoritmo dove si scorrono i frames contenuti nell'oggetto \emph{reader} e se ne controlla se risultano \textbf{None}, in caso contrario si effettua prima l'object detection con il metodo \emph{detect}, e infine la quantizzazione.
+\item Infine, si rilasciano le risorse dell'oggetto  \textbf{FFMpegWriter} con l'istruzione \emph{close()}.
+\item Per concludere, rileggiamo il file originale e lo confrontiamo con varie metriche di qualità paragonandolo a quello codificato con \textbf{FFMpegWriter} e quantizzato per Region of Interest. Le metriche di qualità usate sono: \textbf{SSIM,BRISQUE,LPIPS}.
+\end{enumerate}
