@@ -22,7 +22,7 @@ if(stripos("/",$text)==0){ //se è un comando
 }
 
 $text = trim($text);
-$text = strtolower($text);
+//$text = strtolower($text);
 
 
 
