@@ -15,10 +15,19 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
-if(stripos("/",$text)==0){ //se è un comando
-    $toSend= explode(" ",$text);
+if(stripos("/poll",$text)==0){ //se è un comando polling
+    /*$toSend= explode(" ",$text);
     for($i=1;$i<count($toSend);$i++)
-        echo $toSend[i];
+        echo $toSend[i];*/
+	$BOT_TOKEN = '275479088:AAGX7HmIXKFBM_ongjY_a5xL4V5FKhqCz1k';
+	$API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
+	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
+	$parameters = array('url' => $API_URL); //forma lunga di $parameters["url"] = $POLL_URL
+	$parameters["method"] = 'getUpdates';
+	//$url = $API_URL . $method. '?' . http_build_query($parameters);
+	//$handle = curl_init($url);
+	//$result = curl_exec($handle);
+	echo json_encode($parameters);
 }
 
 $text = trim($text);
