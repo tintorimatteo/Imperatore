@@ -18,7 +18,7 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 
 header("Content-Type: application/json");
-if($text=="forum"){ //se è un comando polling
+if($text=="unifi"){ //se è un comando polling
 	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
 	$parameters = array('chat_id' => $chatId, "text" => $POLL_URL);
     $parameters["method"] = "sendMessage";
