@@ -18,14 +18,13 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 
 header("Content-Type: application/json");
-if($text=="unifi"){ //se è un comando polling
+if($text=="notices"){ //se è un comando polling
 	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
 	$parameters = array('chat_id' => $chatId, "text" => $POLL_URL);
     $parameters["method"] = "sendMessage";
     //$parameters["method"] = 'getUpdates'; *versione corretta*
 	echo json_encode($parameters);
-    $parameters["method"] = "getMe";
-    echo json_encode($parameters);
+    
 }
 
 if($text=="forum"){
@@ -53,15 +52,14 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="metaphore"){
-      $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Gang-Klan-Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Archimede-Marco-Odino-Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Resto(?),Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu,Pace(?).\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola,Cuore(?),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Energia(?),Spia,Faccia.\nAmore,Roma,Minaccia,Lui\n";
+      $content = "Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Marco,Odino,Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu,Pace(?).\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola,Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Energia(?),Spia,Faccia.\nAmore,Roma,Minaccia,Lui\nResto,Cicatrice,Cornice";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 
 }else{
-$parameters = array('chat_id' => $chatId, "text" => $text);
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+$parameters["method"] = "getMe";
+    echo json_encode($parameters);
 }
 
 ?>
