@@ -19,11 +19,13 @@ $text = trim($text);
 
 header("Content-Type: application/json");
 if($text=="unifi"){ //se è un comando polling
-	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
+	$POLL_URL = '[inline URL]href="https://www.ing-inm.unifi.it/' 
 	$parameters = array('chat_id' => $chatId, "text" => $POLL_URL);
     $parameters["method"] = "sendMessage";
     //$parameters["method"] = 'getUpdates'; *versione corretta*
 	echo json_encode($parameters);
+    $POLL_URL='<a href="https://www.ing-inm.unifi.it/">Carriera</a><a href="http://webmail.stud.unifi.it/">Mail</a>';
+    echo json_encode($parameters);
     $parameters["method"] = "getMe";
     echo json_encode($parameters);
 }
