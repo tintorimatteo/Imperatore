@@ -19,18 +19,18 @@ $text = trim($text);
 
 header("Content-Type: application/json");
 if($text=="unifi"){ //se è un comando polling
-	$POLL_URL = '[inline URL]href="https://www.ing-inm.unifi.it/' 
+    $parameters["method"] = "getMe";
+    echo json_encode($parameters);
+	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
 	$parameters = array('chat_id' => $chatId, "text" => $POLL_URL);
     $parameters["method"] = "sendMessage";
     //$parameters["method"] = 'getUpdates'; *versione corretta*
 	echo json_encode($parameters);
-    $POLL_URL='[inline URL]https://www.ing-inm.unifi.it/'
+    $POLL_URL='<a href="https://kairos.unifi.it/agendaweb/index.php?view=easycourse&form-type=corso&include=corso&txtcurr=1+Anno+-+GENERICO&anno=2020&scuola=ScuoladiIngegneria&corso=B070&anno2%5B%5D=GEN%7C1&visualizzazione_orario=cal&date=10-04-2021&periodo_didattico=&_lang=it&list=0&week_grid_type=-1&ar_codes_=&ar_select_=&col_cells=0&empty_box=0&only_grid=0&highlighted_date=0&all_events=0&faculty_group=0">Orario lezioni</a>'
     $parameters["text"] = $POLL_URL;
     echo json_encode($parameters);
     $POLL_URL='[inline URL]http://webmail.stud.unifi.it/';
     $parameters["text"] = $POLL_URL;
-    echo json_encode($parameters);
-    $parameters["method"] = "getMe";
     echo json_encode($parameters);
 }
 
@@ -47,15 +47,11 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="mail"){
-    $parameters = array('chat_id' => $chatId, "text" => "HaoshokuYYYY");
-    $parameters["method"] = "sendMessage";
-    echo json_encode($parameters);
-}else if($text=="quid"){
-    $parameters = array('chat_id' => $chatId, "text" => "...D.447");
+    $parameters = array('chat_id' => $chatId, "text" => "Saluto");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="unifi"){
-    $parameters = array('chat_id' => $chatId, "text" => "Who.M.I(Karashò)?");
+    $parameters = array('chat_id' => $chatId, "text" => "Saluto kebab");
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="biblioteca"){
@@ -63,15 +59,14 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="metaphore"){
-      $content = "Nessuno,Età,Anthousa,Morte,VitaExtraordinaria,Destino,Klan,Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Marco,Odino,Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu,Pace(?).\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola,Cuore(?),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Energia(?),Spia,Faccia.\nAmore,Roma,Minaccia,Lui\nResto,Cicatrice,Cornice,Bocca,Testa,Notte(? Poiché calda)";
+      $content = "Nessuno\n\nEtà,Anthousa,Morte,Vita,Destino,Klan,Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Marco,Odino,Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu.\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Spia,Faccia.\nMagia,Inferno,Fama,Grana,Contante\nAmore,Roma,Minaccia,Lui\nResto,Cicatrice,Cornice,Bocca,Testa,Notte(? Poiché calda)\nOdio,Colosseo";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 
 }else{
-$parameters = array('chat_id' => $chatId, "text" => $text);
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+$parameters["method"] = "getMe";
+    echo json_encode($parameters);
 }
 
 ?>
