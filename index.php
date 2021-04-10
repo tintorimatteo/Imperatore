@@ -24,7 +24,11 @@ if($text=="unifi"){ //se è un comando polling
     $parameters["method"] = "sendMessage";
     //$parameters["method"] = 'getUpdates'; *versione corretta*
 	echo json_encode($parameters);
-    $POLL_URL='<a href="https://www.ing-inm.unifi.it/">Carriera</a><a href="http://webmail.stud.unifi.it/">Mail</a>';
+    $POLL_URL='[inline URL]https://www.ing-inm.unifi.it/'
+    $parameters["text"] = $POLL_URL;
+    echo json_encode($parameters);
+    $POLL_URL='[inline URL]http://webmail.stud.unifi.it/';
+    $parameters["text"] = $POLL_URL;
     echo json_encode($parameters);
     $parameters["method"] = "getMe";
     echo json_encode($parameters);
