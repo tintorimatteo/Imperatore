@@ -59,15 +59,15 @@ if($text=="forum"){
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }else if($text=="metaphore"){
-      $content= "Nessuno,Stato,seme versato(sboro),Età,Anthousa,Morte,Vita,Destino,Klan,Suicidio
-      (TK.Squad),Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Marco,Odino,Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu.\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Spia,Faccia.\nMagia,Inferno,Fama,Grana,Contante\nAmore,Roma,Minaccia,Lui\nResto,Cicatrice,Cornice,Bocca,Testa,Notte(? Poiché calda)\nOdio,Colosseo";
+      $content= "Nessuno,Stato,seme versato(sboro),Età,Anthousa,Morte,Vita,Destino,Klan,Suicidio(TK.Squad),Setta,Casolimite,Scoperta,Disagio,Rimmel,Dio,Arte,Buio,Marco,Odino,Zeus,Tecnologia,Guai,Lampada,Nuvola,Alba,Immortalità,Infinito,Emozioni,Roma,MiaCittà,Erba.\nMondo,Ieri,Pallone,Infanzia,Sigaretta,Invidia,Rabbia,Realtà.\nTutto,Vento,Governo,Nebbia,Cuore,Futuro,Sorriso,Penna,Maschera,Musica,Lei,Tu.\nStoria,Sabato,Noia,Fede,Ora,Secondo,Giorno,Ritorno,MezzoVolo,Rondine,Attimo,Giusy,Favola),Sogno,BucoNero,Florenza,Sincerità,VitaOrdinaria.\nCoca,Saliva,PolvereDiStelle,Fuliggine,Suono,Birra,Ghiaccio,Acqua,Notte,Inferno,Canzone,Odio,Merdina,Mare,Oro,LibroAperto,HipHop,Buio.\nBianca,Paura,Cataclisma,Capolavoro,Amore.\nHabibi,Lei,Flora,Europa,Qualcosa,Talento,Cosmo,Strada,Fine,Paradiso,Cielo,Natura,Spia,Faccia.\nMagia,Inferno,Fama,Grana,Contante\nAmore,Roma,Minaccia,Lui\nResto,Cicatrice,Cornice,Bocca,Testa,Notte(? Poiché calda)\nOdio,Colosseo";
     $parameters = array('chat_id' => $chatId, "text" => $content);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 
 }else{
-$parameters["method"] = "getMe";
-    echo json_encode($parameters);
+$parameters = array('chat_id' => $chatId, 'method' => 'getMe');
+$res=json_encode($parameters)
+echo JSON.stringify($res);
 }
 
 ?>
