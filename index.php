@@ -16,6 +16,8 @@ $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
 
 $text = trim($text);
+$appo = $text;
+$text = strtolower($text);
 
 header("Content-Type: application/json");
 if($text=="unifi"){ //se è un comando polling
@@ -65,9 +67,12 @@ if($text=="forum"){
     echo json_encode($parameters);
 
 }else{
-$parameters = array('chat_id' => $chatId, 'method' => 'getMe');
-$res=json_encode($parameters)
-echo JSON.stringify($res);
+$text = $appo;
+$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters["method"] = "sendMessage";
+echo json_encode($parameters);
 }
-
+/*$parameters = array('chat_id' => $chatId, 'method' => 'getMe');
+$res=json_encode($parameters)
+echo JSON.stringify($res);*/
 ?>
