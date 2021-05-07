@@ -3,7 +3,7 @@
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://imperatorebot.herokuapp.com/index.php';
 //$WEBHOOK_URL = 'https://imperatore.herokuapp.com/index.scala';
-$BOT_TOKEN = '275479088:AAGSp0KoBzv2TOEPP9Ntby4l8dOrRa-5lyY';
+$BOT_TOKEN = '275479088:AAHM51o9M-UoYRDDFK5qGJvEVhwsP1YWSxA';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
