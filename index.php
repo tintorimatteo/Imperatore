@@ -23,7 +23,7 @@ header("Content-Type: application/json");
 if($text=="unifi"){ //se è un comando polling
     
 	$POLL_URL = 'https://www.ing-inm.unifi.it/' ;
-    $POLL_URL='<a href="https://kairos.unifi.it/agendaweb/">Orario lezioni</a>&nbsp<a href="https://e-l.unifi.it">Moodle</a>';
+    $POLL_URL='<a href="https://kairos.unifi.it/agendaweb/">Orario lezioni</a>%20<a href="https://e-l.unifi.it">Moodle</a>';
 	$parameters = array('chat_id' => $chatId, "text" => $POLL_URL,"parse_mode"=>"HTML");
     $parameters["method"] = "sendMessage";
     //$parameters["method"] = 'getUpdates'; *versione corretta*
