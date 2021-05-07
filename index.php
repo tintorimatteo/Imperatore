@@ -28,7 +28,7 @@ if($text=="unifi"){ //se è un comando polling
     //$parameters["method"] = 'getUpdates'; *versione corretta*
 	echo json_encode($parameters);
     $POLL_URL='<a href="https://kairos.unifi.it/agendaweb/index.php?view=easycourse&form-type=corso&include=corso&txtcurr=1+Anno+-+GENERICO&anno=2020&scuola=ScuoladiIngegneria&corso=B070&anno2%5B%5D=GEN%7C1&visualizzazione_orario=cal&date=10-04-2021&periodo_didattico=&_lang=it&list=0&week_grid_type=-1&ar_codes_=&ar_select_=&col_cells=0&empty_box=0&only_grid=0&highlighted_date=0&all_events=0&faculty_group=0">Orario lezioni</a>'
-    $parameters["text"] = $POLL_URL;
+    $parameters =array("chat_id"=>$chatId,"text"=>$POLL_URL);
     echo json_encode($parameters);
     $POLL_URL='[inline URL]http://webmail.stud.unifi.it/';
     $POLL_URL=POLL_URL +'&nbsp[inline URL]https://e-l.unifi.it/login/index.php';
