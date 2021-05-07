@@ -31,7 +31,7 @@ if($text=="unifi"){ //se è un comando polling
     $parameters =array("chat_id"=>$chatId,"text"=>$POLL_URL);
     echo json_encode($parameters);*/
     $POLL_URL='[inline URL]http://webmail.stud.unifi.it/';
-    $POLL_URL=POLL_URL +'&nbsp[inline URL]https://e-l.unifi.it/login/index.php';
+    $POLL_URL=$POLL_URL +'&nbsp[inline URL]https://e-l.unifi.it/login/index.php';
     $parameters["text"] = $POLL_URL;
     echo json_encode($parameters);
 }
