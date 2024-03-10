@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://imperatorebot.herokuapp.com/index.php';
+$WEBHOOK_URL = 'https://www.dropbox.com/scl/fi/qho52yebbrbvs2cpq3wbb/register.php?rlkey=6eq0qnp7pyt6vjsvbbimuqzm6&dl=0';
 //$WEBHOOK_URL = 'https://imperatore.herokuapp.com/index.scala';
 $BOT_TOKEN = '275479088:AAHM51o9M-UoYRDDFK5qGJvEVhwsP1YWSxA';
 
